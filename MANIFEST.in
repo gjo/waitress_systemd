@@ -1,0 +1,8 @@
+include CHANGES.rst
+include black.toml
+include tox.ini
+recursive-include examples *.ini
+recursive-include examples *.py
+recursive-include examples *.rst
+recursive-include examples *.toml
+recursive-include tests *.py

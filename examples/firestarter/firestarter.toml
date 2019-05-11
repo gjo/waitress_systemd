@@ -1,0 +1,11 @@
+[worker]
+exec_start = "./../../.tox/example_firestarter/bin/pserve pastedeploy.ini"
+numprocesses = 2
+restart = "on-failure"
+start_immediate = true
+socket_address = ["127.0.0.1:6543"]
+environments = ["PYTHONPATH=."]
+ack = "none"
+stdout_log = "time:1:D:L:7:./logs/worker.stdout"
+stderr_log = "time:1:D:L:7:./logs/worker.stderr"
+live_check_timeout = 0
